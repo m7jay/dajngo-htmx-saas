@@ -4,4 +4,5 @@ from django.test import TestCase
 
 
 class UserTest(TestCase):
-    pass
+    def test_user(self):
+        assert True

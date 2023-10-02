@@ -30,4 +30,6 @@ clean:
 	find . -type d -name __pycache__ | xargs rm -fr
 
 .PHONY: checklist
-checklist: clean lint typehint black pytest
+checklist:
+	make clean lint  typehint black
+	pytest

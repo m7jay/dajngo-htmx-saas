@@ -40,3 +40,5 @@ sudo -u postgres psql
    createuser --interactive -P yourusername
    psql -U yourusername -h 127.0.0.1 postgres
 ```
+
+[Adding htmx to django ref](https://testdriven.io/blog/django-htmx-tailwind/)

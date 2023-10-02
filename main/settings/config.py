@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     # our apps
     "user",
     "compressor",
+    "django_extensions",
 ]
 
 MIDDLEWARE = [
@@ -132,3 +133,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 COMPRESS_ROOT = BASE_DIR / "static"
 COMPRESS_ENABLED = True
 STATICFILES_FINDERS = ("compressor.finders.CompressorFinder",)
+
+# user model
+AUTH_USER_MODEL = "user.User"
